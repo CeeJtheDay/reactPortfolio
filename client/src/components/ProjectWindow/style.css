@@ -1,0 +1,37 @@
+.projectImage {
+    height: 200px;
+    margin: 10px;
+}
+
+#projectInfo {
+    margin: 10px;
+    height: 200px;
+}
+.projectImageContainer {
+    overflow: hidden;
+    text-align: center;
+}
+
+#projectHeader {
+    background-color: rgb(231, 80, 113, 0.7);
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+}
+
+#windowContainer {
+    padding: 5px;
+    margin:10px 0px 10px 0px;
+    border: dotted 2px rgb(231, 80, 113, 0.7);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#infoContainer {
+    margin: auto;
+}
+
+.buttonLinks {
+    margin: 10px;
+    border: solid 1px rgb(231, 80, 113) !important;
+    color: rgb(231, 80, 113, 0.7) !important;
+}

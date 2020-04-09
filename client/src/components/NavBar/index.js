@@ -1,18 +1,20 @@
 import React from "react";
-import logo from "../../logo.svg";
-import { Link } from "react-router-dom";
+import "./style.css";
+import { Navbar, Nav, Container } from "react-bootstrap";
+//  import { Link } from "react-router-dom";
 
 const NavBar = () => {
 
     return (
-        <div className="navigation">
-            <img src={logo} className="logo" alt="Logo" />
-            <div className="navigation-sub">
-            <Link to="/" className="item">Projects</Link>
-            <Link to="/articles" className="item">Articles</Link>
-            <Link to="/about" className="item">About</Link>
-            </div>
-        </div>
+        <Navbar sticky="top" id="mainNav" className="navbar navbar-dark bg-dark">
+            <Navbar.Brand id="navName" className="navbar-brand mb-0 h1">
+                Carl J. Conrad 
+            </Navbar.Brand>
+            <Container id="linkContainer" className="justify-content-end">
+                <Nav.Link id="navLinkProjects" href="/projects">projects</Nav.Link>
+                <Nav.Link id="navLinkAbout" href="/">about</Nav.Link>
+            </Container>
+        </Navbar>
     )
 }
 

@@ -1,35 +1,45 @@
 import React from "react";
-import Container from "../Container";
-import Row from "../Row";
-import Col from "../Col";
-import Link from "react-router-dom";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
+// import Container from "../Container";
+// import Row from "../Row";
+// import Col from "../Col";
+// import {Link} from "react-router-dom";
+import "./style.css";
 
 const ProjectWindow = ({image, title, description, deployed, github}) => {
     return (
-        <Container fluid={false} id="windowContainer">
-            <Row>
-                <Col size={4}>
+        <Container id="windowContainer">
+            <Row className="justify-content-around">
+                <Col className= "justify-content-center" id="projectImageContainer" lg={4}>
                     <img className="projectImage" alt="projectImage" src={image} />
                 </Col>
-                <Col size={8}>
-                    <Container fluid={true} id="projectInfo">
-                        <Row>
-                            <h1>{title}</h1>
-                        </Row>
-                        <Row>
-                            <h3>{description}</h3>
-                        </Row>
-                        <Row justify="around">
-                            <Col size={3}>
-                                <Link to={deployed} />
+                <Col id="infoContainer" className="justify-content-center" lg={7}>
+                    <Card className="projectInfo">
+                        <Card.Header as="h1" id="projectHeader">
+                            {title}
+                        </Card.Header>
+                        <Card.Body>
+                            <Card.Text>
+                                {description}
+                            </Card.Text>
+                        </Card.Body>
+                        <Row className="justify-content-around">
+                            <Col lg={3}>
+                                <Button variant="light" className="buttonLinks" href={deployed} > 
+                                    Deployed App 
+                                </Button>
                             </Col>
-                            <Col size={3}>
-                                <Link to={github} />
+                            <Col lg={3}>
+                                <Button variant="light" className="buttonLinks" href={github} > 
+                                    GitHub Repo 
+                                </Button>
                             </Col>
                         </Row>
-                    </Container>
+                    </Card>
                 </Col>
             </Row>
         </Container>
     )
 }
+
+export default ProjectWindow;

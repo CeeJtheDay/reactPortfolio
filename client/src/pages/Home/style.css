@@ -1,0 +1,28 @@
+.profLink {
+    color:  rgb(231, 80, 113);
+    margin: 30px 10px 0px 10px;
+    font-size: 40px;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 5px 5px 5px #ccc;
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+    -khtml-box-shadow: 5px 5px 5px #ccc;
+}
+
+h3 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+
+#firstLine {
+    margin-top: 20px;
+}
+
+#aboutBody {
+    font-family: 'Comic Neue', cursive;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 40px;
+    border: dotted 2px rgb(231, 80, 113, 0.7);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
