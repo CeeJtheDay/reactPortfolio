@@ -1,0 +1,21 @@
+{
+  "name": "reactPortfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd client && npm i && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CeeJtheDay/reactPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CeeJtheDay/reactPortfolio/issues"
+  },
+  "homepage": "https://github.com/CeeJtheDay/reactPortfolio#readme"
+}
