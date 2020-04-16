@@ -4,6 +4,7 @@ import CPORG from "../../images/CPORG.png";
 import SqwashPic from "../../images/Screen Shot 2020-04-02 at 6.34.31 PM.png";
 import FavrPic from "../../images/Screen Shot 2020-04-02 at 6.26.18 PM.png";
 import { Container, Row, } from "react-bootstrap";
+import BookSearch from "../../images/BookSearch.png";
 // import NavBar from "../../components/NavBar";
 import ProjectWindow from "../../components/ProjectWindow";
 import "./style.css";
@@ -16,6 +17,9 @@ function Projects(props) {
       </Row>
       <Row>
         <ProjectWindow image={FavrPic} title="Favr" description="Favr, a mibile-first design, connects users looking to make a trade with other users. Geared towards trading services, Favr finds users based on location, offers, and needs." deployed="https://bart3r-app.herokuapp.com/" github="https://github.com/CeeJtheDay/Favr" />
+      </Row>
+      <Row>
+        <ProjectWindow image={BookSearch} title="React Book Search" description="A MERN stack Application. Utilizing the Google Books API. A user can search for a book by title and save books that they like for viewing in the future." deployed="https://react-book-s3arch.herokuapp.com/" github="https://github.com/CeeJtheDay/reactBookSearch" />
       </Row>
       <Row>
         <ProjectWindow image={CPORG} title="Market Vendors Cooperative" description="A wordpress site built in response to the Covid-19 outbreak in seattle. Allowed for curbside pick-up of orders from multiple vendors in Pike Place Market. Rapidly developed and ready for deployment withing 2 weeks. Added up to 60 products for each participating vendor. Built using popular plugins from Woocommerce and Mailchimp. The Pike Place Market would decide to go a different direction, this site does not currently offer any services, but could easily become an online storefront again, with minimal work. **NO GITHUB REPO**" deployed="https://www.cornerproduce.org" />  
